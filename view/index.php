@@ -269,7 +269,7 @@
 				            <!-- End Atribute Navigation -->
 							<!-- start forms -->
 							<div class="forms">
-								<form action="../Controller/login.php" method="post">
+								<form action="../Controller/login.control.php" method="post">
 									<input type="text" name="username" class="form" placeholder="Enter your username">
 									<input type="password" name="password" class="form" placeholder="Enter your password">
 										<button type="submit" class="logBtn">Connect</button>
