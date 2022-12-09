@@ -1,5 +1,5 @@
 <?php
-    require_once('../Model/datab.php');
+    require_once('../Model/database.model.php');
 
     class login extends dataB{
 

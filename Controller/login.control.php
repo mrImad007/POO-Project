@@ -1,7 +1,6 @@
 <?php
 
     include('../Model/login.model.php');
-    echo "tmrguin";
     class connecting extends login{
         public function direction(){
             session_start();
