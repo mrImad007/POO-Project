@@ -7,10 +7,9 @@ class add extends dataB{
         $data = new dataB();
         $pdo=$data->connectPdo();  
 
-        $query = "INSERT INTO `products` VALUES ('$productName','$productPrice','$productImage') ";
+        $query = "INSERT INTO `products` (`id`, `name`, `price`, `image`) VALUES (NULL, '$productName', '$productPrice', '$productImage');";
         $exe = $pdo->prepare($query);
         $exe->execute();
-
     }
 }
 

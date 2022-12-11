@@ -14,5 +14,4 @@ class deleteConfirmation extends delete{
 
 $action = new deleteConfirmation();
 $action->confirmation()
-//need a form page ofr adding products
 ?>

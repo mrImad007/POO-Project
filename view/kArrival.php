@@ -1,5 +1,7 @@
 <?php
-    require_once('../Model/database.php');
+    include('../Model/show.model.php');
+    $products = new affichage;
+    $products->showAllProducts();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -142,10 +144,10 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                         <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
-                            <li class="menu active"><a href="index.html" style="color: #616060;">home</a></li>
-                            <li class="menu"><a href="kArrival.html" style="color:#e99c2e ;">new arrival</a></li>
-                            <li class="menu"><a href="kFeatures.html">features</a></li>
-                            <li class="menu"><a href="cont.html">contact</a></li>
+                            <li class="menu active"><a href="index.php" style="color: #616060;">home</a></li>
+                            <li class="menu"><a href="kArrival.php" style="color:#e99c2e ;">new arrival</a></li>
+                            <li class="menu"><a href="kFeatures.php">features</a></li>
+                            <li class="menu"><a href="cont.php">contact</a></li>
                         </ul><!--/.nav -->
                     </div><!-- /.navbar-collapse -->
                 </div><!--/.container-->
@@ -171,10 +173,11 @@
             </div><!--/.section-header-->
             <div class="new-arrivals-content">
                 <div class="row">
+                    <?php foreach($products as $product):?>
                     <div class="col-md-3 col-sm-4">
                         <div class="single-new-arrival">
                             <div class="single-new-arrival-bg">
-                                <img src="assets/images/collection/arrivals1.png" alt="wooden chair">
+                                <img src="<?php echo $product['image']?>" alt="wooden chair">
                                 <div class="single-new-arrival-bg-overlay"></div>
                                 <div class="sale bg-1">
                                     <p>sale</p>
@@ -190,10 +193,11 @@
                                     </p>
                                 </div>
                             </div>
-                            <h4><a href="#">wooden chair</a></h4>
-                            <p class="arrival-product-price">$65.00</p>
+                            <h4><a href="#"><?php echo $product['name']?></a></h4>
+                            <p class="arrival-product-price"><?php echo $product['price']?></p>
                         </div>
                     </div>
+                    <?php endforeach; ?>
                     <div class="col-md-3 col-sm-4">
                         <div class="single-new-arrival">
                             <div class="single-new-arrival-bg">

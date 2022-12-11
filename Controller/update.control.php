@@ -4,9 +4,9 @@ use update as GlobalUpdate;
 
 include('../Model/update.model.php');
 
-class confirmation extends update {
+class updateConfirmation extends update {
     public function changing(){
-        if(isset($_POST['productName'])){
+        if(isset($_POST['productName'],)){
             $productId = $_GET['productId'];
 
             $productName = $_POST['productName'];
@@ -15,7 +15,13 @@ class confirmation extends update {
 
             $executing = new update();
             $executing->updating($productName,$productPrice,$productImage,$productId);
+
+            header('Location: ../view/index.php');
         }
     }
 }
+
+$action = new updateConfirmation();
+$action->changing();
+
 ?>

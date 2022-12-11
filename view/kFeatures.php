@@ -1,3 +1,9 @@
+<?php
+    include('../Model/show.model.php');
+    $products = new affichage;
+    $products->showAllProducts();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -139,10 +145,10 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                         <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
-                            <li class="menu active"><a href="index.html" style="color:#616060 ;">home</a></li>
-                            <li class="menu"><a href="kArrival.html">new arrival</a></li>
-                            <li class="menu"><a href="kFeatures.html" style="color:#e99c2e ;">features</a></li>
-                            <li class="menu"><a href="cont.html">contact</a></li>
+                            <li class="menu active"><a href="index.php" style="color:#616060 ;">home</a></li>
+                            <li class="menu"><a href="kArrival.php">new arrival</a></li>
+                            <li class="menu"><a href="kFeatures.php" style="color:#e99c2e ;">features</a></li>
+                            <li class="menu"><a href="cont.php">contact</a></li>
                         </ul><!--/.nav -->
                     </div><!-- /.navbar-collapse -->
                 </div><!--/.container-->
@@ -159,8 +165,9 @@
             <h1 style="color: #616060; margin-top: 20px;">featured products</h1>
         </div><!--/.section-header-->
         <div class="feature-content">
+            <?php foreach($products as $product):?>
                     <div class="single-feature">
-                        <img src="assets/images/features/f1.jpg" alt="designed sofa" style="width: 80%; height: 400px;margin-left: 55px;">
+                        <img src="<?php echo $product['image']?>" alt="designed sofa" style="width: 80%; height: 400px;margin-left: 55px;">
                         <div class="single-feature-txt text-center">
                             <p>
                                 <i class="fa fa-star"></i>
@@ -189,6 +196,7 @@
                             <h5>$200.00</h5>
                         </div>
                     </div>
+                    <?php endforeach;?>
                     <div class="single-feature">
                         <img src="assets/images/features/f3.jpg" alt="chair and table" style="width: 80%; height: 400px;margin-left: 55px;">
                         <div class="single-feature-txt text-center">

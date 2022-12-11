@@ -1,5 +1,4 @@
 <?php
-
     include('../Model/login.model.php');
     class connecting extends login{
         public function direction(){
@@ -16,7 +15,7 @@
                         header('Location: ../view/index.php');
                     }
                     else{
-                        header('Location: ../view/cont.php');
+                        header('Location: ../view/addProduct.html');
                     }
                 }
             }

@@ -3,7 +3,7 @@ require_once('../Model/database.model.php');
 
 class affichage extends dataB{
         
-    public function show(){
+    public function showAllProducts(){
         $data = new dataB();
         $pdo=$data->connectPdo();  
 
