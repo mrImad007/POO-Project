@@ -282,14 +282,14 @@
 				                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 				                    <i class="fa fa-bars"></i>
 				                </button>
-				                <a class="navbar-brand" href="index.html">Immo<span>Lux</span>.</a>
+				                <a class="navbar-brand" href="index.php">Immo<span>Lux</span>.</a>
 				            </div><!--/.navbar-header-->
 				            <!-- End Header Navigation -->
 
 				            <!-- Collect the nav links, forms, and other content for toggling -->
 				            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
 				                <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
-				                    <li class="menu active"><a href="kHome.php">home</a></li>
+				                    <li class="menu active"><a href="index.php">home</a></li>
 				                    <li class="menu"><a href="kArrival.php">new arrival</a></li>
 				                    <li class="menu"><a href="kFeatures.php">features</a></li>
 				                    <li class="menu"><a href="cont.php">contact</a></li>

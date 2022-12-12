@@ -135,7 +135,7 @@
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                             <i class="fa fa-bars"></i>
                         </button>
-                        <a class="navbar-brand" href="index.html">Immo<span >Lux</span>.</a>
+                        <a class="navbar-brand" href="index.php">Immo<span >Lux</span>.</a>
                     </div><!--/.navbar-header-->
                     <!-- End Header Navigation -->
 

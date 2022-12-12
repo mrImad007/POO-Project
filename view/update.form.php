@@ -153,32 +153,21 @@ include('../Controller/show.control.php');
 				        </div><!--/.container-->
 				    </nav><!--/nav-->
 				    <!-- End Navigation -->
-						<a href="../view/addProduct.html" style="display: flex; align-items: center;">
-							<button>add product</button>
-						</a>
-                    <div class="new-container">
-					<?php foreach($products as $product):?>
-						<div class="products">
-							<div class="new-image"><?php echo $product['image']?></div>
-							<div class="new-name"><?php echo $product['name']?></div>
-							<div class="new-price"><?php echo $product['price']?></div>
 
-							<form action="../Controller/delete.control.php" method="post">
-							<input type="hidden" name="productId" value="<?php echo $product['id']?>">
-            				<button type="submit">delete</button>
-							</form>
-
-							<a href="../view/update.form.php">
-							<button type="submit">update</button>
-							</a>
-
-						</div>
-						<?php endforeach;?>
-					</div>
+                    <?php foreach($products as $product):?>
+                    <div>
+                        <form action="../Controller/update.control.php" method="post">
+						<input type="text" name="productImage" value="<?php echo $product['image']?>">
+                            <input type="text" name="productName" value="<?php echo $product['name']?>">
+                            <input type="text" name="productPrice" value="<?php echo $product['price']?>">
+                        <input type="hidden" name="productId" value="<?php echo $product['id']?>">
+                        <button type="submit">update</button>
+                        </form>
+                    </div>
+                <?php endforeach;?>
 
 
-
-                    		<!--footer start-->
+                                        		<!--footer start-->
 		<footer id="footer"  class="footer">
 			<div class="container">
 				<div class="hm-footer-copyright text-center">

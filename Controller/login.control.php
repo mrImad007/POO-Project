@@ -15,7 +15,7 @@
                         header('Location: ../view/index.php');
                     }
                     else{
-                        header('Location: ../view/addProduct.html');
+                        header('Location: ../view/dashboard.php');
                     }
                 }
             }

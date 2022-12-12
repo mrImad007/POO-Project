@@ -11,12 +11,13 @@ class updateConfirmation extends update {
 
             $productName = $_POST['productName'];
             $productPrice = $_POST['productPrice'];
+            $productImage = $_POST['productImage'];
             
 
             $executing = new update();
-            $executing->updating($productName,$productPrice,$productId);
+            $executing->updating($productName,$productPrice,$productImage,$productId);
 
-            header('Location: ../view/kArrival.php');
+            header('Location: ../view/dashboard.php');
         }
         
     }
