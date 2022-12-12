@@ -7,7 +7,7 @@ class delete extends dataB{
         $data = new dataB();
         $pdo=$data->connectPdo();  
 
-        $query = "DELETE FROM `products` WHERE id = `$productId` ";
+        $query = "DELETE FROM `products` WHERE id = '$productId' ";
         $exe = $pdo->prepare($query);
         $exe->execute();
     }

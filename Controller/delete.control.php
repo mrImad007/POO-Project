@@ -9,9 +9,12 @@ class deleteConfirmation extends delete{
             $executing = new delete();
             $executing->deleting($productId);
         }
+        header('Location: ../view/kArrival.php');
     }
 }
 
 $action = new deleteConfirmation();
-$action->confirmation()
+$action->confirmation();
+
+
 ?>

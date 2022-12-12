@@ -2,9 +2,6 @@
 include('../Model/add.model.php');
 
 class addConfirmation extends add{
-    public $productName;
-    public $productPrice;
-    public $productImage;
     
     public function confirmation(){
         if(isset($_POST['productName'], $_POST['productPrice'],$_POST['productImage'])){
