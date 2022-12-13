@@ -137,7 +137,7 @@
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                             <i class="fa fa-bars"></i>
                         </button>
-                        <a class="navbar-brand" href="index.php">Immo<span >Lux</span>.</a>
+                        <a class="navbar-brand" href="index.html">Immo<span >Lux</span>.</a>
 
                     </div><!--/.navbar-header-->
                     <!-- End Header Navigation -->
@@ -165,9 +165,9 @@
             <h1 style="color: #616060; margin-top: 20px;">featured products</h1>
         </div><!--/.section-header-->
         <div class="feature-content">
-            <?php foreach($products as $product):?>
+            
                     <div class="single-feature">
-                        <img src="<?php echo $product['image']?>" alt="designed sofa" style="width: 80%; height: 400px;margin-left: 55px;">
+                        <img src="../view/assets/images/features/f1.jpg" alt="designed sofa" style="width: 80%; height: 400px;margin-left: 55px;">
                         <div class="single-feature-txt text-center">
                             <p>
                                 <i class="fa fa-star"></i>
@@ -196,7 +196,7 @@
                             <h5>$200.00</h5>
                         </div>
                     </div>
-                    <?php endforeach;?>
+                    
                     <div class="single-feature">
                         <img src="assets/images/features/f3.jpg" alt="chair and table" style="width: 80%; height: 400px;margin-left: 55px;">
                         <div class="single-feature-txt text-center">
