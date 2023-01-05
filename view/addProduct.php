@@ -1,9 +1,6 @@
-<?php
-include('../Controller/show.control.php');
+<!doctype html>
+<html class="no-js" lang="en">
 
-?>
-<!DOCTYPE html>
-<html lang="en">
     <head>
         <!-- meta data -->
         <meta charset="utf-8">
@@ -47,20 +44,12 @@ include('../Controller/show.control.php');
         <!--responsive.css-->
         <link rel="stylesheet" href="assets/css/responsive.css">
 
-        <title>Dash-Board</title>
-
-		<style>
-			.products{
-				display: flex;
-				justify-content: space-around;
-				align-items: center;
-			}
-		</style>
+        <link rel="stylesheet" href="assets/css/forms.css">
 
     </head>
 <body>
         			<!-- top-area Start -->
-					<div class="top-area">
+                    <div class="top-area">
 				<div class="header-area">
 					<!-- Start Navigation -->
 				    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
@@ -155,30 +144,11 @@ include('../Controller/show.control.php');
 				    </nav><br><br><!--/nav-->
 				    <!-- End Navigation -->
 
-						<a href="../view/addProduct.html" style="display: flex; align-items: center;">
-							<button>add product</button>
-						</a>
-                    <div class="new-container">
-					<?php foreach($products as $product):?>
-						<div class="products">
-							<div class="new-image"><?php echo $product['image']?></div>
-							<div class="new-name"><?php echo $product['name']?></div>
-							<div class="new-price"><?php echo $product['price']?></div>
-
-							<form action="../Controller/delete.control.php" method="post">
-							<input type="hidden" name="productId" value="<?php echo $product['id']?>">
-            				<button type="submit">delete</button>
-							</form>
-
-							<a href="../view/update.form.php">
-							<button type="submit">update</button>
-							</a>
-
-						</div>
-						<?php endforeach;?>
-					</div>
-
-
-
+    <form action="../Controller/add.control.php" method="post" style="display: flex; flex-direction:column;">
+        <input type="text" name="productName" placeholder="Enter le nom du produit"><br>
+        <input type="text" name="productPrice" placeholder="Enter le price du produit"><br>
+        <input type="text" name="productImage" placeholder="Enter l'image du produit URL"><br>
+        <button type="submit" class="logBtn">submit</button>
+    </form>
 </body>
 </html>

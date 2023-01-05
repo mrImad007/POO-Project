@@ -1,9 +1,6 @@
-<?php
-include('../Controller/show.control.php');
+<!doctype html>
+<html class="no-js" lang="en">
 
-?>
-<!DOCTYPE html>
-<html lang="en">
     <head>
         <!-- meta data -->
         <meta charset="utf-8">
@@ -47,20 +44,13 @@ include('../Controller/show.control.php');
         <!--responsive.css-->
         <link rel="stylesheet" href="assets/css/responsive.css">
 
-        <title>Dash-Board</title>
-
-		<style>
-			.products{
-				display: flex;
-				justify-content: space-around;
-				align-items: center;
-			}
-		</style>
+        <link rel="stylesheet" href="assets/css/forms.css">
 
     </head>
-<body>
+	
+	<body>
         			<!-- top-area Start -->
-					<div class="top-area">
+			<div class="top-area">
 				<div class="header-area">
 					<!-- Start Navigation -->
 				    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
@@ -155,30 +145,67 @@ include('../Controller/show.control.php');
 				    </nav><br><br><!--/nav-->
 				    <!-- End Navigation -->
 
-						<a href="../view/addProduct.html" style="display: flex; align-items: center;">
-							<button>add product</button>
-						</a>
-                    <div class="new-container">
-					<?php foreach($products as $product):?>
-						<div class="products">
-							<div class="new-image"><?php echo $product['image']?></div>
-							<div class="new-name"><?php echo $product['name']?></div>
-							<div class="new-price"><?php echo $product['price']?></div>
+        <!-- start forms -->
+        <div class="forms">
+            <form action="../Controller/login.control.php" method="post">
+                <input type="text" name="username" class="form" placeholder="Enter your username"><br>
+                <input type="password" name="password" class="form" placeholder="Enter your password"><br>
+                <button type="submit" class="logBtn">Connect</button>
+            </form>
+        </div>
+        <!-- end forms -->
 
-							<form action="../Controller/delete.control.php" method="post">
-							<input type="hidden" name="productId" value="<?php echo $product['id']?>">
-            				<button type="submit">delete</button>
-							</form>
 
-							<a href="../view/update.form.php">
-							<button type="submit">update</button>
-							</a>
-
-						</div>
-						<?php endforeach;?>
+		<!--footer start-->
+		<footer id="footer"  class="footer">
+			<div class="container">
+				<div class="hm-footer-copyright text-center">
+					<div class="footer-social">
+						<a href="#"><i class="fa fa-facebook"></i></a>	
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+						<a href="#"><i class="fa fa-pinterest"></i></a>
+						<a href="#"><i class="fa fa-behance"></i></a>	
 					</div>
+					<p>
+						&copy;copyright. designed and developed by <a href="https://www.linkedin.com/in/imad-eddine-zaoui-a2ab95246/">Imad</a>
+					</p><!--/p-->
+				</div><!--/.text-center-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			
+        </footer><!--/.footer-->
+		<!--footer end-->
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="assets/js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="assets/js/bootsnav.js"></script>
+
+		<!--owl.carousel.js-->
+        <script src="assets/js/owl.carousel.min.js"></script>
 
 
-
-</body>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		
+        
+        <!--Custom JS-->
+        <script src="assets/js/custom.js"></script>
+        
+    </body>
+	
 </html>

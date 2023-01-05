@@ -79,7 +79,7 @@
                                 <a href="#"><span class="lnr lnr-magnifier"></span></a>
                             </li><!--/.search-->
                             <li class="nav-setting">
-                                <a href="#"><span class="lnr lnr-cog"></span></a>
+                                <a href="../view/signin.php"><span class="lnr lnr-cog"></span></a>
                             </li><!--/.search-->
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
