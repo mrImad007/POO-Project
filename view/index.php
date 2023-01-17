@@ -220,7 +220,7 @@
 				                		<a href="#"><span class="lnr lnr-magnifier"></span></a>
 				                	</li><!--/.search-->
 				                	<li class="nav-setting">
-				                		<a href="../view/signin.php"><span class="lnr lnr-cog"></span></a>
+				                		<a href="../view/signin.php" title="Sign in"><span class="lnr lnr-cog"></span></a>
 				                	</li><!--/.search-->
 				                    <li class="dropdown">
 				                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
@@ -267,15 +267,7 @@
 				                </ul>
 				            </div><!--/.attr-nav-->
 				            <!-- End Atribute Navigation -->
-							<!-- start forms -->
-							<div class="forms">
-								<form action="../Controller/login.control.php" method="post">
-									<input type="text" name="username" class="form" placeholder="Enter your username">
-									<input type="password" name="password" class="form" placeholder="Enter your password">
-										<button type="submit" class="logBtn">Connect</button>
-								</form>
-							</div>
-							<!-- end forms -->
+
 
 				            <!-- Start Header Navigation -->
 				            <div class="navbar-header">
@@ -289,10 +281,11 @@
 				            <!-- Collect the nav links, forms, and other content for toggling -->
 				            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
 				                <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
-				                    <li class="menu active"><a href="index.php">home</a></li>
+				                    <li class="menu active"><a href="index.php" style="color: #e99c2e ;">home</a></li>
 				                    <li class="menu"><a href="kArrival.php">new arrival</a></li>
 				                    <li class="menu"><a href="kFeatures.php">features</a></li>
 				                    <li class="menu"><a href="cont.php">contact</a></li>
+									<li class="menu"><a href="cont.php" >Dashboard</a></li>
 				                </ul><!--/.nav -->
 				            </div><!-- /.navbar-collapse -->
 				        </div><!--/.container-->

@@ -1,11 +1,10 @@
 <?php
 
-use update as GlobalUpdate;
-
 include('../Model/update.model.php');
 
 class updateConfirmation extends update {
     public function changing(){
+        
         if(isset($_POST['productId'])){
             $productId = $_POST['productId'];
 

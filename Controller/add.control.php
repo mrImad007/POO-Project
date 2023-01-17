@@ -12,11 +12,11 @@ class addConfirmation extends add{
             $executing = new add();
             $executing->adding($productName,$productPrice,$productImage);
         }
-        header('Location: ../view/index.php');
+        header('Location: ../view/dashboard.php');
     }
 }
 
 $action = new addConfirmation();
 $action->confirmation()
-//need a form page ofr adding products
+
 ?>

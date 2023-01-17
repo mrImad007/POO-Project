@@ -79,7 +79,7 @@
                                 <a href="#"><span class="lnr lnr-magnifier"></span></a>
                             </li><!--/.search-->
                             <li class="nav-setting">
-                                <a href="../view/signin.php"><span class="lnr lnr-cog"></span></a>
+                                <a href="../view/signin.php" title="Sign in"><span class="lnr lnr-cog"></span></a>
                             </li><!--/.search-->
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
@@ -143,6 +143,7 @@
                             <li class="menu"><a href="kArrival.php">new arrival</a></li>
                             <li class="menu"><a href="kFeatures.php">features</a></li>
                             <li class="menu"><a href="cont.php" style="color: #e99c2e ;">contact</a></li>
+                            <li class="menu"><a href="cont.php">Dashboard</a></li>
                         </ul><!--/.nav -->
                     </div><!-- /.navbar-collapse -->
                 </div><!--/.container-->

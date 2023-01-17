@@ -10,7 +10,7 @@
                 header('Location : ../view/dashboard.php');
              }
              else{
-                header('Location : ../view/index.php');
+                header('Location : ../view/signin.php');
              }
         }
     }

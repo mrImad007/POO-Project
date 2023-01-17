@@ -3,7 +3,7 @@ form{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin-top: 70px;
+
 }
 .logBtn{
     width: 90px;
@@ -19,6 +19,7 @@ input{
     border: 10px 10px 10px 10px black;
 }
 .forms{
+    box-shadow: 5px 5px 5px 5px grey;
     text-align: center;
     height: 280px;
 }

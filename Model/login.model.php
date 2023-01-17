@@ -1,7 +1,7 @@
 <?php
     require_once('../Model/database.model.php');
 
-    class login extends dataB{
+    class logInnn extends dataB{
 
         public function check($name,$password){
 

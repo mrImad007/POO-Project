@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html >
 
     <head>
         <!-- meta data -->
@@ -46,6 +46,12 @@
 
         <link rel="stylesheet" href="assets/css/forms.css">
 
+		<style>
+			.navbar-nav{
+				margin-left: 200px;
+			}
+		</style>
+
     </head>
 	
 	<body>
@@ -75,7 +81,7 @@
 				                		<a href="#"><span class="lnr lnr-magnifier"></span></a>
 				                	</li><!--/.search-->
 				                	<li class="nav-setting">
-				                		<a href="../view/signin.php"><span class="lnr lnr-cog"></span></a>
+				                		<a href="../view/signin.php" title="Sign in"><span class="lnr lnr-cog"></span></a>
 				                	</li><!--/.search-->
 				                    <li class="dropdown">
 				                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
@@ -135,10 +141,11 @@
 				            <!-- Collect the nav links, forms, and other content for toggling -->
 				            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
 				                <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
-				                    <li class="menu active"><a href="index.php">home</a></li>
+									<li class="menu"><a href="index.php">Home</a></li>
 				                    <li class="menu"><a href="kArrival.php">new arrival</a></li>
 				                    <li class="menu"><a href="kFeatures.php">features</a></li>
 				                    <li class="menu"><a href="cont.php">contact</a></li>
+									<li class="menu"><a href="cont.php" style="color: #e99c2e ;">Dashboard</a></li>
 				                </ul><!--/.nav -->
 				            </div><!-- /.navbar-collapse -->
 				        </div><!--/.container-->

@@ -1,6 +1,7 @@
 <?php
-include('../Controller/show.control.php');
+        include('../controller/show.single.control.php');
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -46,6 +47,8 @@ include('../Controller/show.control.php');
         <!--responsive.css-->
         <link rel="stylesheet" href="assets/css/responsive.css">
 
+		<link rel="stylesheet" href="assets/css/forms.css">
+
         <title>Dash-Board</title>
 
 		<style>
@@ -54,6 +57,15 @@ include('../Controller/show.control.php');
 				justify-content: space-around;
 				align-items: center;
 			}
+		
+			.navbar-nav{
+				margin-left: 200px;
+			}
+
+			input{
+				width: 500px;
+			}
+		
 		</style>
 
     </head>
@@ -84,7 +96,7 @@ include('../Controller/show.control.php');
 				                		<a href="#"><span class="lnr lnr-magnifier"></span></a>
 				                	</li><!--/.search-->
 				                	<li class="nav-setting">
-				                		<a href="#"><span class="lnr lnr-cog"></span></a>
+				                		<a href="../view/signin.php" title="Sign in"><span class="lnr lnr-cog"></span></a>
 				                	</li><!--/.search-->
 				                    <li class="dropdown">
 				                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
@@ -144,27 +156,28 @@ include('../Controller/show.control.php');
 				            <!-- Collect the nav links, forms, and other content for toggling -->
 				            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
 				                <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
-				                    <li class="menu active"><a href="index.php">home</a></li>
+									<li class="menu"><a href="index.php">Home</a></li>
 				                    <li class="menu"><a href="kArrival.php">new arrival</a></li>
 				                    <li class="menu"><a href="kFeatures.php">features</a></li>
 				                    <li class="menu"><a href="cont.php">contact</a></li>
+									<li class="menu"><a href="cont.php" style="color: #e99c2e ;">Dashboard</a></li>
 				                </ul><!--/.nav -->
 				            </div><!-- /.navbar-collapse -->
 				        </div><!--/.container-->
 				    </nav><!--/nav-->
 				    <!-- End Navigation -->
 
-                    <?php foreach($products as $product):?>
-                    <div>
+                    
+                    <div class="forms">
                         <form action="../Controller/update.control.php" method="post">
-						<input type="text" name="productImage" value="<?php echo $product['image']?>">
-                            <input type="text" name="productName" value="<?php echo $product['name']?>">
-                            <input type="text" name="productPrice" value="<?php echo $product['price']?>">
-                        <input type="hidden" name="productId" value="<?php echo $product['id']?>">
-                        <button type="submit">update</button>
+							<input type="text" name="productImage" value="<?php echo $exe[0]['image']?>"><br>
+                            <input type="text" name="productName" value="<?php echo $exe[0]['name']?>"><br>
+                            <input type="text" name="productPrice" value="<?php echo $exe[0]['price']?>"><br>
+							<input type="hidden" name="productId" value="<?php echo $exe[0]['id']?>"><br>
+                        	<button type="submit" class="logBtn">update</button>
                         </form>
                     </div>
-                <?php endforeach;?>
+					
 
 
                                         		<!--footer start-->

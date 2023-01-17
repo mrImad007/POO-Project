@@ -1,7 +1,7 @@
 <?php
     include('../Model/login.model.php');
 
-    class connecting extends login{
+    class connecting extends logInnn{
         
         public function direction(){
 
@@ -16,7 +16,7 @@
                     $result = $this->check($name,$password);
 
                     if(!$result){
-                        header('Location: ../view/index.php');
+                        header('Location: ../view/signin.php');
                     }
                     else{
                         header('Location: ../view/dashboard.php');
