@@ -142,8 +142,8 @@
                             <li class="menu active"><a href="index.php" style="color:#616060 ;">home</a></li>
                             <li class="menu"><a href="kArrival.php">new arrival</a></li>
                             <li class="menu"><a href="kFeatures.php">features</a></li>
-                            <li class="menu"><a href="cont.php" style="color: #e99c2e ;">contact</a></li>
-                            <li class="menu"><a href="cont.php">Dashboard</a></li>
+                            <li class="menu"><a href="signin.php" style="color: #e99c2e ;">Contact</a></li>
+                            <li class="menu"><a href="../Controller/redirection.control.php">Dashboard</a></li>
                         </ul><!--/.nav -->
                     </div><!-- /.navbar-collapse -->
                 </div><!--/.container-->

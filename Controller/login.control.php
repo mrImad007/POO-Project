@@ -19,7 +19,11 @@
                         header('Location: ../view/signin.php');
                     }
                     else{
+                        session_start();
+                            $name = $_POST['username'];
+                            $_SESSION['login'] = $name;
                         header('Location: ../view/dashboard.php');
+
                     }
                 }
             }

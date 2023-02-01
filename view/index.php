@@ -285,7 +285,7 @@
 				                    <li class="menu"><a href="kArrival.php">new arrival</a></li>
 				                    <li class="menu"><a href="kFeatures.php">features</a></li>
 				                    <li class="menu"><a href="cont.php">contact</a></li>
-									<li class="menu"><a href="cont.php" >Dashboard</a></li>
+									<li class="menu"><a href="../Controller/redirection.control.php" >Dashboard</a></li>
 				                </ul><!--/.nav -->
 				            </div><!-- /.navbar-collapse -->
 				        </div><!--/.container-->

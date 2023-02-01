@@ -1,5 +1,4 @@
 <?php
-
 include('../Controller/show.control.php');
 ?>
 <!DOCTYPE html>
@@ -84,7 +83,7 @@ include('../Controller/show.control.php');
                                 <a href="#"><span class="lnr lnr-magnifier"></span></a>
                             </li><!--/.search-->
                             <li class="nav-setting">
-                                <a href="../view/signin.php" title="Sign in"><span class="lnr lnr-cog"></span></a>
+                                <a href="../Controller/logout.control.php" title="log out"><span class="lnr lnr-cog"></span></a>
                             </li><!--/.search-->
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
@@ -148,13 +147,12 @@ include('../Controller/show.control.php');
                             <li class="menu"><a href="kArrival.php">new arrival</a></li>
                             <li class="menu"><a href="kFeatures.php">features</a></li>
                             <li class="menu"><a href="cont.php">contact</a></li>
-							<li class="menu"><a href="cont.php" style="color: #e99c2e ;">Dashboard</a></li>
+							<li class="menu"><a href="../Controller/redirection.control.php" style="color: #e99c2e ;">Dashboard</a></li>
                         </ul><!--/.nav -->
                     </div><!-- /.navbar-collapse -->
                 </div><!--/.container-->
             </nav><br><br><!--/nav-->
             <!-- End Navigation -->
-
 						<a href="../view/addProduct.php" style="display: flex; align-items: center;" class="theBtn">
 							<button class="addBtn">Add +</button>
 						</a><br><br>
